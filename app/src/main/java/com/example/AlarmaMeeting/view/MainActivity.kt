@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.TooltipCompat
+import androidx.core.view.isVisible
 import com.example.AlarmaMeeting.R
 
 
@@ -26,6 +27,15 @@ class MainActivity : AppCompatActivity() {
 
         var btnProgramar: Button = this.findViewById(R.id.programar)
         btnProgramar.setOnClickListener { alertProgramarMeetingIngress() }
+
+        var panel2: RelativeLayout = this.findViewById(R.id.frame)
+        panel2.isVisible = false
+
+        var btnVerEvento: Button = this.findViewById(R.id.VerEvento)
+        btnVerEvento.setOnClickListener { alertProgramarMeetingVerEvento() }
+
+        var btnCancelar: Button = this.findViewById(R.id.Aceptar2)
+        btnCancelar.setOnClickListener { alertProgramarMeetingCancelar2() }
     }
     private fun showDatePickerDialog() {
         val datePicker = DatePickerFragment { day, month, year -> onDateSelected(day, month, year) }
@@ -47,5 +57,33 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ProgramarActivity::class.java)
         // start your next activity
         startActivity(intent)
+    }
+
+    private fun alertProgramarMeetingVerEvento() {
+        var panel2: RelativeLayout = this.findViewById(R.id.frame)
+        panel2.isVisible = true
+
+        var btnVerEvento: Button = this.findViewById(R.id.VerEvento)
+        btnVerEvento.isVisible = false
+
+        var btnSalir: Button = this.findViewById(R.id.salir)
+        btnSalir.isVisible = false
+
+        var btnProgramar: Button = this.findViewById(R.id.programar)
+        btnProgramar.isVisible = false
+    }
+
+    private fun alertProgramarMeetingCancelar2() {
+        var panel2: RelativeLayout = this.findViewById(R.id.frame)
+        panel2.isVisible = false
+
+        var btnVerEvento: Button = this.findViewById(R.id.VerEvento)
+        btnVerEvento.isVisible = true
+
+        var btnSalir: Button = this.findViewById(R.id.salir)
+        btnSalir.isVisible = true
+
+        var btnProgramar: Button = this.findViewById(R.id.programar)
+        btnProgramar.isVisible = true
     }
 }
