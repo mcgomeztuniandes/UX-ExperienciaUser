@@ -140,34 +140,28 @@
         android:id="@+id/cancelar"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="200dp"
         android:backgroundTint="#CF2A27"
         android:text="Cancelar"
         app:cornerRadius="@android:dimen/thumbnail_height"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/login"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="200dp"
         android:backgroundTint="#009E0F"
         android:text="Aceptar"
         app:cornerRadius="@android:dimen/thumbnail_height"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="@+id/cancelar"
+        />
 
 
 
