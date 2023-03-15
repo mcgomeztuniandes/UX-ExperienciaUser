@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Alarma Meeting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="btnPerformersText">Performers</string>
+    <string name="btnAlbumsText">Albums</string>
+    <string name="btnCollectorsText">Collectors</string>
+    <string name="btnTracksText">Tracks</string>
+    <string name="full_name">Usuario</string>
+    <string name="password">Password</string>
+    <string name="vinils_app">Bienvenido Alarma Meeting</string>
+    <string name="singup">Continue</string>
+    <string name="campoobligatorio">Campo obligatorio</string>
+    <string name="telephone">Telephone:</string>
+    <string name="email">Email:</string>
+    <string name="favorite_performers">Favorite Performers</string>
+    <string-array name="sonidos">
+        <item>Select sonido</item>
+        <item>Radar</item>
+        <item>Beacon</item>
+        <item>Bulleting</item>
+        <item>By The Seaside</item>
+        <item>Chismes</item>
+        <item>Circuit</item>
+        <item>Constellation</item>
+        <item>Consmic</item>
+        <item>Crystal</item>
+        <item>Opening</item>
+        <item>Nigth Owl</item>
+        <item>Presto</item>
+        <item>Radiate</item>
+    </string-array>
+    <string-array name="Repetir">
+        <item>Cada</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>Personalizado</item>
+    </string-array>
+    <!-- String Album create Layout -->
+    <string name="inputAlbumName">Album name</string>
+    <string name="inputAlbumCover">An image url: http://albumImage.png</string>
+    <string name="labelAlbumName">Name</string>
+    <string name="labelAlbumCover">Cover</string>
+    <string name="labelAlbumReleaseDate">Release Date</string>
+    <string name="labelAlbumGenre">Genre</string>
+    <string name="labelAlbumRecord">Record label</string>
+    <string name="labelAlbumDescription">Description</string>
+    <string name="labelBtnCreateAlbum">Create</string>
+    <string name="brithdateMusician">Brithdate: aaaa/mm/dd</string>
+    <string name="premiationsMusician">Premiations Date:</string>
+    <string name="labelComments">Comments</string>
+    <string name="hintAgregarComentario">Add Comment</string>
+    <string name="btnAgregarComentario">Add Comment</string>
+    <string name="musicians">Musicians</string>
+    <string name="bands">Bands</string>
+    <string name="creationBand">Creation: aaaa/mm/dd</string>
+    <string name="info">Info</string>
+    <string name="btnAgregarComentarioDescripcion">Button to add a comment into an album</string>
+    <string-array name="AlbumGenres">
+        <item>Select genre</item>
+        <item>Classical</item>
+        <item>Folk</item>
+        <item>Salsa</item>
+        <item>Rock</item>
+    </string-array>
+    <string-array name="AlbumLabels">
+        <item>Select record label</item>
+        <item>Discos Fuentes</item>
+        <item>EMI</item>
+        <item>Elektra</item>
+        <item>Fania Records</item>
+        <item>Sony Music</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

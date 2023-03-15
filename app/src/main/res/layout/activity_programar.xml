@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Programar"
+        android:textAlignment="center"
+        android:textColor="@color/title_color"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#9FC5F8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvTitulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:text="Titulo"
+            android:textColor="#9900ff"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titulo de la reunión"
+            android:inputType="textPersonName"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvTitulo2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="5dp"
+            android:text="Hora"
+            android:textColor="#9900ff"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextHora"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:layout_marginTop="110dp"
+            android:autofillHints=""
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvTitulo3"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="5dp"
+            android:text="Mínutos"
+            android:textColor="#9900ff"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextMintos"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="110dp"
+            android:autofillHints=""
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvTitulo4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="5dp"
+            android:text="Sonido"
+            android:textColor="#9900ff"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/editListSonido"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="120dp"
+            android:autofillHints=""
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvTitulo5"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="5dp"
+            android:text="Repetir"
+            android:textColor="#9900ff"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/editListRepetir"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="120dp"
+            android:autofillHints=""
+            tools:ignore="MissingConstraints" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="10dp"
+            android:background="#FFFFFF"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#CF2A27"
+        android:text="Cancelar"
+        app:cornerRadius="@android:dimen/thumbnail_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#009E0F"
+        android:text="Aceptar"
+        app:cornerRadius="@android:dimen/thumbnail_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cancelar" />
+
+
+    <!-- Add CalendarView to display the Calendar -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
